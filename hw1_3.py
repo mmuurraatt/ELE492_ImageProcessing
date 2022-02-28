@@ -10,7 +10,7 @@ df = pd.DataFrame(img.flatten())
 filepath = 'pixel_values.xlsx'
 df.to_excel(filepath, index=False)
 
-io.imshow(img)
+io.imshow(img)  # Displays an image.
 
 # Covert to HSV
 img_hsv = color.rgb2hsv(img)
@@ -24,3 +24,4 @@ figure(1)
 io.imshow(img_rgb)
 
 io.show()
+
